@@ -5,6 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>API Slideshow!</title>
 
+        <!-- Title Font Here -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <!-- Text Font Here -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
         <!-- CSS Here -->
         <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -12,42 +22,41 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <!-- IDEA: Using the pokemon API, I can create a slideshow with pokemon, possibly displaying any info below (game appearances, stats, and/or types). I'll also possibly make it a random pokemon each time ONLY if it's possible. -->
-        <!-- ALL CODE BELOW AND IN THE SCRIPT + CSS FILES ARE FROM W3 SCHOOLS -->
 
         <!-- Slideshow container -->
         <h1>Pokemon Showcase</h1>
         <div class="slideshow-container">
 
-            <!-- Full-width images with number and caption text -->
+            <!-- Div with the slide number, image, and pokemon text inside. -->
+             <!-- The M51 image is used as a placeholder. -->
             <div class="mySlides fade">
-                <div class="numbertext">1 / 5</div>
+                <div class="numbertext"><p>1 / 5</p></div>
                     <img src="images/M51.jpg">
-                <div class="text">Snivy</div>
+                <div class="text"><p>Snivy</p></div>
             </div>
         
             <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
+                    <div class="numbertext"><p>2 / 5</p></div>
                         <img src="images/M51.jpg">
-                    <div class="text">Rotom</div>
+                    <div class="text"><p>Rotom</p></div>
             </div>
         
             <div class="mySlides fade">
-                <div class="numbertext">3 / 5</div>
+                <div class="numbertext"><p>3 / 5</p></div>
                     <img src="images/M51.jpg">
-                <div class="text">Ledian</div>
+                <div class="text"><p>Ledian</p></div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">4 / 5</div>
+                <div class="numbertext"><p>4 / 5</p></div>
                     <img src="images/M51.jpg">
-                <div class="text">Baltoy</div>
+                <div class="text"><p>Baltoy</p></div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">5 / 5</div>
+                <div class="numbertext"><p>5 / 5</p></div>
                     <img src="images/M51.jpg">
-                <div class="text">Poliwhirl</div>
+                <div class="text"><p>Poliwhirl</p></div>
             </div>
         
             <!-- Next and previous buttons -->
@@ -56,7 +65,7 @@
         </div>
         <br>
         
-        <!-- The dots/circles -->
+        <!-- The dots/circles for each slide-->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -64,5 +73,12 @@
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
         </div>
+        
+        <!-- Stats get displayed here -->
+        <div class="centered">
+            <ul id="pokemonStats"></ul>
+        </div>
+
+        <!-- Most of the HTML layout is borrowed over from W3 Schools, with some small additions and tweaks -->
     </body>
 </html>
